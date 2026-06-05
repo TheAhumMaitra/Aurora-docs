@@ -1,6 +1,6 @@
 ---
 date: '2026-05-03T12:13:18+05:30'
-draft: true
+weight: 1
 ---
 # What is Aurora?
 

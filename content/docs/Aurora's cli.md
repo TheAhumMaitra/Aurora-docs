@@ -1,5 +1,7 @@
-# Aurora's Cli
-
+---
+title: "Aurora's CLI"
+weight: 4
+---
 Aurora's cli is automatically insatlled when you use the installtion script or if you followed manual installation script correctly. You can do many things with Aurora's cli. 
 
 ## Some useful commands

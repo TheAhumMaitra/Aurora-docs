@@ -1,5 +1,7 @@
-# Keybinds
-
+---
+title: "Keybinds"
+weight: 2
+---
 This page conatins all keybinds used in AUrora. Keybinds are bascially keycombonation which does a certain task when you press the key combination
 
 ## Hyprland keybinds
