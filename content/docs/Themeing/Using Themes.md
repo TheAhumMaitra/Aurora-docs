@@ -28,3 +28,6 @@ cd ~/.config/themes && git clone GIT_REPO_URL
 
 >[!NOTE]
 > You can also set your theme using Aurora's cli. View more at Aurora's CLI section
+
+## Themes gallery
+**You can see all official and external safe themes here :- https://hypraurora.vercel.app/themes**

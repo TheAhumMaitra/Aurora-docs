@@ -3,7 +3,7 @@ title: "Creating Themess"
 weight: 2
 ---
 
-Aurora provides developers unique features to customize their theme. In your theme folder, create essential services folders - `hypr`, `rofi`, `waybar`, `wlogout` and a default wallpaper (which should be named `default.png`). You can look our official 4 themes folders for understanding theming structure. You can add many wallpapers on the `background` folder
+Aurora provides developers unique features to customize their theme. In your theme folder, create essential services folders - `hypr`, `rofi`, `waybar`, `wlogout`, `rofi`, etc and a default wallpaper (which should be named `default.png`). You can look our official 4 themes folders for understanding theming structure. You can add many wallpapers on the `backgrounds` folder
 
 ### Example structure of a theme 
 
@@ -22,7 +22,10 @@ Aurora Default
          colors.css
       wlogout
          colors.css
-      default.png #Wallpaper
+      nvim/lua/plugins
+         colorscheme.lua
+      custom.css #the colorscheme file for all Aurora GUIS
+      default.png #Default Wallpaper
       config.toml
 ```
 > [!TIP]
@@ -51,8 +54,13 @@ license = "GPL-3.0-or-later"
 # this is optional but highly recommended 
 [settings]
 script = "default.py" #we can use default.py or main.py or main.lua
-interpreter = "python" #we can use bash, lua, node
+interpreter = "python" #we can use bash, lua, node (but you need to install the interpreter first)
 ```
+
+> [!TIP]
+> You can create a `install.sh` script to install required packages. Aurora by default comes with some interpreters like : lua
+
+**Here'a example of a official Aurora theme :- https://github.com/TheAhumMaitra/Aurora/tree/master/dotfiles/.config/themes/Dracula**
 
 > [!TIP]
 > You can import multiple external scripts on the main script

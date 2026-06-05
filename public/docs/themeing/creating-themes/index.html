@@ -9,15 +9,15 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>Creating Themess – Aurora</title>
-  <meta name="description" content="Aurora provides developers unique features to customize their theme. In your theme folder, create essential services folders - hypr, rofi, waybar, wlogout and a default wallpaper (which should be named default.png). You can look our official 4 themes folders for understanding theming structure. You can add many wallpapers on the background folder
-Example structure of a theme Aurora Default backgrounds wallpaper1.png wallpaper2.png wallpaper3.png main.png #If you want users to switch to default background also hypr colors.lua rofi colors.rasi waybar colors.css wlogout colors.css default.png #Wallpaper config.toml Tip" /><link rel="canonical" href="https://example.org/docs/themeing/creating-themes/" itemprop="url" />
+  <meta name="description" content="Aurora provides developers unique features to customize their theme. In your theme folder, create essential services folders - hypr, rofi, waybar, wlogout, rofi, etc and a default wallpaper (which should be named default.png). You can look our official 4 themes folders for understanding theming structure. You can add many wallpapers on the backgrounds folder
+Example structure of a theme Aurora Default backgrounds wallpaper1.png wallpaper2.png wallpaper3.png main.png #If you want users to switch to default background also hypr colors.lua rofi colors.rasi waybar colors.css wlogout colors.css nvim/lua/plugins colorscheme.lua custom.css #the colorscheme file for all Aurora GUIS default.png #Default Wallpaper config.toml Tip" /><link rel="canonical" href="https://example.org/docs/themeing/creating-themes/" itemprop="url" />
 
 <meta property="og:title" content="Creating Themess">
 <meta
   property="og:description"
   content="
     
-      Aurora provides developers unique features to customize their theme. In your theme folder, create essential services folders - hypr, rofi, waybar, wlogout and a default wallpaper (which should be named default.png). You can look our official 4 themes folders for understanding theming structure. You can add many wallpapers on the background folder
+      Aurora provides developers unique features to customize their theme. In your theme folder, create essential services folders - hypr, rofi, waybar, wlogout, rofi, etc and a default wallpaper (which should be named default.png). You can look our official 4 themes folders for understanding theming structure. You can add many wallpapers on the backgrounds folder
 Example structure of a theme
     
 
@@ -35,7 +35,10 @@ Aurora Default
          colors.css
       wlogout
          colors.css
-      default.png #Wallpaper
+      nvim/lua/plugins
+         colorscheme.lua
+      custom.css #the colorscheme file for all Aurora GUIS
+      default.png #Default Wallpaper
       config.toml
   
     
@@ -58,13 +61,13 @@ Aurora Default
 
 
   <meta itemprop="name" content="Creating Themess">
-  <meta itemprop="description" content="Aurora provides developers unique features to customize their theme. In your theme folder, create essential services folders - hypr, rofi, waybar, wlogout and a default wallpaper (which should be named default.png). You can look our official 4 themes folders for understanding theming structure. You can add many wallpapers on the background folder
-Example structure of a theme Aurora Default backgrounds wallpaper1.png wallpaper2.png wallpaper3.png main.png #If you want users to switch to default background also hypr colors.lua rofi colors.rasi waybar colors.css wlogout colors.css default.png #Wallpaper config.toml Tip">
-  <meta itemprop="wordCount" content="201">
+  <meta itemprop="description" content="Aurora provides developers unique features to customize their theme. In your theme folder, create essential services folders - hypr, rofi, waybar, wlogout, rofi, etc and a default wallpaper (which should be named default.png). You can look our official 4 themes folders for understanding theming structure. You can add many wallpapers on the backgrounds folder
+Example structure of a theme Aurora Default backgrounds wallpaper1.png wallpaper2.png wallpaper3.png main.png #If you want users to switch to default background also hypr colors.lua rofi colors.rasi waybar colors.css wlogout colors.css nvim/lua/plugins colorscheme.lua custom.css #the colorscheme file for all Aurora GUIS default.png #Default Wallpaper config.toml Tip">
+  <meta itemprop="wordCount" content="252">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Creating Themess">
-  <meta name="twitter:description" content="Aurora provides developers unique features to customize their theme. In your theme folder, create essential services folders - hypr, rofi, waybar, wlogout and a default wallpaper (which should be named default.png). You can look our official 4 themes folders for understanding theming structure. You can add many wallpapers on the background folder
-Example structure of a theme Aurora Default backgrounds wallpaper1.png wallpaper2.png wallpaper3.png main.png #If you want users to switch to default background also hypr colors.lua rofi colors.rasi waybar colors.css wlogout colors.css default.png #Wallpaper config.toml Tip">
+  <meta name="twitter:description" content="Aurora provides developers unique features to customize their theme. In your theme folder, create essential services folders - hypr, rofi, waybar, wlogout, rofi, etc and a default wallpaper (which should be named default.png). You can look our official 4 themes folders for understanding theming structure. You can add many wallpapers on the backgrounds folder
+Example structure of a theme Aurora Default backgrounds wallpaper1.png wallpaper2.png wallpaper3.png main.png #If you want users to switch to default background also hypr colors.lua rofi colors.rasi waybar colors.css wlogout colors.css nvim/lua/plugins colorscheme.lua custom.css #the colorscheme file for all Aurora GUIS default.png #Default Wallpaper config.toml Tip">
 
     <link rel="preload" href="/css/compiled/main.min.1a431501cdeb52323c920e7761f7d9e327b2bee53160196c4bd1d34a3fd9fbc9.css" as="style" integrity="sha256-GkMVAc3rUjI8kg53YffZ4yeyvuUxYBlsS9HTSj/Z&#43;8k=" />
     <link href="/css/compiled/main.min.1a431501cdeb52323c920e7761f7d9e327b2bee53160196c4bd1d34a3fd9fbc9.css" rel="stylesheet" integrity="sha256-GkMVAc3rUjI8kg53YffZ4yeyvuUxYBlsS9HTSj/Z&#43;8k=" />
@@ -473,7 +476,7 @@ Example structure of a theme Aurora Default backgrounds wallpaper1.png wallpaper
             
           </div>
           
-          <p>Aurora provides developers unique features to customize their theme. In your theme folder, create essential services folders - <code>hypr</code>, <code>rofi</code>, <code>waybar</code>, <code>wlogout</code> and a default wallpaper (which should be named <code>default.png</code>). You can look our official 4 themes folders for understanding theming structure. You can add many wallpapers on the <code>background</code> folder</p>
+          <p>Aurora provides developers unique features to customize their theme. In your theme folder, create essential services folders - <code>hypr</code>, <code>rofi</code>, <code>waybar</code>, <code>wlogout</code>, <code>rofi</code>, etc and a default wallpaper (which should be named <code>default.png</code>). You can look our official 4 themes folders for understanding theming structure. You can add many wallpapers on the <code>backgrounds</code> folder</p>
 <h3>Example structure of a theme<span class="hx:absolute hx:-mt-20" id="example-structure-of-a-theme"></span>
     <a href="#example-structure-of-a-theme" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
 
@@ -491,7 +494,10 @@ Example structure of a theme Aurora Default backgrounds wallpaper1.png wallpaper
 </span></span><span style="display:flex;"><span>         <span style="color:#ae81ff">colors.css</span>
 </span></span><span style="display:flex;"><span>      <span style="color:#ae81ff">wlogout</span>
 </span></span><span style="display:flex;"><span>         <span style="color:#ae81ff">colors.css</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#ae81ff">default.png</span> <span style="color:#75715e">#Wallpaper</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#ae81ff">nvim/lua/plugins</span>
+</span></span><span style="display:flex;"><span>         <span style="color:#ae81ff">colorscheme.lua</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#ae81ff">custom.css</span> <span style="color:#75715e">#the colorscheme file for all Aurora GUIS</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#ae81ff">default.png</span> <span style="color:#75715e">#Default Wallpaper</span>
 </span></span><span style="display:flex;"><span>      <span style="color:#ae81ff">config.toml</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
   <button
     class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
@@ -534,7 +540,7 @@ Example structure of a theme Aurora Default backgrounds wallpaper1.png wallpaper
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># this is optional but highly recommended </span>
 </span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">settings</span>]
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">script</span> = <span style="color:#e6db74">&#34;default.py&#34;</span> <span style="color:#75715e">#we can use default.py or main.py or main.lua</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">interpreter</span> = <span style="color:#e6db74">&#34;python&#34;</span> <span style="color:#75715e">#we can use bash, lua, node</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">interpreter</span> = <span style="color:#e6db74">&#34;python&#34;</span> <span style="color:#75715e">#we can use bash, lua, node (but you need to install the interpreter first)</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
   <button
     class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
     title="Copy code"
@@ -546,6 +552,14 @@ Example structure of a theme Aurora Default backgrounds wallpaper1.png wallpaper
   </button>
 </div>
 </div>
+<div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:flex-col hx:rounded-lg hx:border hx:py-4 hx:px-4 hx:border-gray-200 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-green-200 hx:bg-green-100 hx:text-green-900 hx:dark:border-green-200/30 hx:dark:bg-green-900/30 hx:dark:text-green-200">
+  <p class="hx:flex hx:items-center hx:font-medium"><svg height=16px class="hx:inline-block hx:align-middle hx:mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>Tip</p>
+
+  <div class="hx:w-full hx:min-w-0 hx:leading-7">
+    <div class="hx:mt-6 hx:leading-7 hx:first:mt-0"><p>You can create a <code>install.sh</code> script to install required packages. Aurora by default comes with some interpreters like : lua</p></div>
+  </div>
+</div>
+<p><strong>Here&rsquo;a example of a official Aurora theme :- <a href="https://github.com/TheAhumMaitra/Aurora/tree/master/dotfiles/.config/themes/Dracula"target="_blank" rel="noopener">https://github.com/TheAhumMaitra/Aurora/tree/master/dotfiles/.config/themes/Dracula</a></strong></p>
 <div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:flex-col hx:rounded-lg hx:border hx:py-4 hx:px-4 hx:border-gray-200 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-green-200 hx:bg-green-100 hx:text-green-900 hx:dark:border-green-200/30 hx:dark:bg-green-900/30 hx:dark:text-green-200">
   <p class="hx:flex hx:items-center hx:font-medium"><svg height=16px class="hx:inline-block hx:align-middle hx:mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>Tip</p>
 
