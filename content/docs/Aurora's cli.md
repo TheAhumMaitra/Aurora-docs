@@ -28,3 +28,4 @@ This will show all available themes
 | `download-theme [ARG_GIT_URL]` | `Downloads the theme` | 
 | `refresh` | `Refresh system` |
 | `help` | `Shows help` |
+| `run_script` | `Runs specified binary` |

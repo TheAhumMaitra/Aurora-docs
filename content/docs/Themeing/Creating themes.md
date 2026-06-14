@@ -3,14 +3,29 @@ title: "Creating Themess"
 weight: 2
 ---
 
-Aurora provides developers unique features to customize their theme. In your theme folder, create essential services folders - `hypr`, `rofi`, `waybar`, `wlogout`, `rofi`, etc and a default wallpaper (which should be named `default.png`). You can look our official 4 themes folders for understanding theming structure. You can add many wallpapers on the `backgrounds` folder
+Aurora provides developers unique features to customize their theme. In your theme folder, create essential services folders - `hypr`, `rofi`, `waybar`, `wlogout`, `rofi`, etc and a default wallpaper (which should be named `default.png`). You can look our official 4 themes folders for understanding theming structure. 
+
+## Supported Applications
+**It supports various default applications**
+1. `waybar`
+2. `hyprland`
+3. `Visual Studio Code`
+4. `btop`
+5. `rofi`
+6. `Neovim (With Lazyvim)`
+7. `wlogout`
+8. `All Aurora's GUI`
+9. `GTK`
+
+> [!IMPORTANT]
+> If your theme requires any external GTK themes, packages you need to create installation script to install them. Also please write instructions to run the installation script on `README.md`
 
 ### Example structure of a theme 
 
 ```yml
 Aurora Default 
       backgrounds
-         wallpaper1.png
+         wallpaper1.jpg
          wallpaper2.png
          wallpaper3.png
          main.png #If you want users to switch to default background also
@@ -24,43 +39,38 @@ Aurora Default
          colors.css
       nvim/lua/plugins
          colorscheme.lua
+      btop/themes
+         current.theme
       custom.css #the colorscheme file for all Aurora GUIS
       default.png #Default Wallpaper
       config.toml
 ```
-> [!TIP]
-> You can create a `config.toml` in your theme folder and you can create a custom script with custom interpreter there. A config toml also keeps theme's information
 
-### Example of `config.toml`
+## Configuration of the theme 
+You need to create a `toml` configuration file called `config.toml` in the theme's root directory. There you can provide essential details!
 
-```toml
-name = "Aurora Default"
-version = "0.1.0"
-
-# this is optional
-authors = [
-    "NAME (@GITHUB_USER_NAME<Optional>) EMAIL",
-]
-
-# this is optional 
-repo_url = "https://github.com/UserName/ThemeRepo.git"
-
-# this is optional but highly recommended 
-wallpaper_sources = ["https://credit.blahblah/blah", "https://blah.nalahbalahbalah"]
-
-# this is optional but highly recommended 
-license = "GPL-3.0-or-later"
-
-# this is optional but highly recommended 
-[settings]
-script = "default.py" #we can use default.py or main.py or main.lua
-interpreter = "python" #we can use bash, lua, node (but you need to install the interpreter first)
-```
+### Supported options for configuration file of theme
+| Section      | Key              | Type          | Required | Description                                          | Example                                                    |
+| ------------ | ---------------- | ------------- | -------- | ---------------------------------------------------- | ---------------------------------------------------------- |
+| Root         | `name`           | String        | Yes      | Human-readable name of the theme/profile.            | `"Aurora Default"`                                         |
+| Root         | `version`        | String        | Yes      | Configuration version.                               | `"0.1.0"`                                                  |
+| Root         | `authors`        | Array`<String>` | No       | List of authors and maintainers.                     | `["Ahum Maitra (@TheAhumMaitra) example@gmail.com"]` |
+| Root         | `repo_url`        | String | No       | Git repository url                   | `https://github.com/TheAhumMaitra/Aurora` |
+| Root         | `wallpaper_sources`        | Array`<String>` | No       | All wallpaper sources URL(s) | `[https://github.com/TheAhumMaitra/Wallpapers]` |
+| Root         | `license`        | String        | No       | SPDX License identifier for the configuration.            | `"GPL-3.0-or-later"`                                       |
+| `[settings]` | `script`         | String        | No      | A script to execute with custom interpreter | `"default.lua"`                                            |
+| `[settings]` | `interpreter`    | String        | No      | Interpreter used to run the script. (must be installed)                  | `"lua"`                                                    |
+| `[gtk]`      | `theme_name`     | String        | Yes       | GTK theme name to apply.                             | `"Yaru-dark"`                                              |
+| `[gtk]`      | `icon_theme`     | String        | Yes       | GTK icon theme name to apply.                        | `"Yaru-grey"`                                              |
+| `[vscode]`   | `publisher`      | String        | Yes       | VS Code extension publisher identifier.              | `"Aliqyan-21"`                                             |
+| `[vscode]`   | `extension_name` | String        | Yes       | VS Code extension name.                              | `"darkvoid"`                                               |
+| `[vscode]`   | `theme_name`     | String        | Yes       | Theme name within the VS Code extension.             | `"darkvoid"`                                               |
 
 > [!TIP]
-> You can create a `install.sh` script to install required packages. Aurora by default comes with some interpreters like : lua
-
-**Here'a example of a official Aurora theme :- https://github.com/TheAhumMaitra/Aurora/tree/master/dotfiles/.config/themes/Dracula**
+> You can create a `install.sh` script to install required packages (such as interpreters, GTK themes, etc)
 
 > [!TIP]
 > You can import multiple external scripts on the main script
+
+**You can look an official Aurora's theme to understand - [`Aurora theme`](https://github.com/TheAhumMaitra/Aurora/tree/master/dotfiles/.config/themes/Dracula)**
+
