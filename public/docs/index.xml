@@ -742,6 +742,22 @@ termflix (Cargo)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;hextra-c
     </item>
     
     <item>
+      <title>Monitor Configuration</title>
+      <link>https://example.org/docs/getting-started/monitor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/getting-started/monitor/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The monitor configuration is located at &lt;code&gt;.config/hypr/monitor.lua&lt;/code&gt;. You can use some helpful GUIs to edit your monitor configuration, such as &lt;code&gt;nwg-displays&lt;/code&gt;. It&amp;rsquo;s very helpful and simple, it will overwrite your current default monitor configuration.&lt;/p&gt;
+&lt;h2&gt;Default monitor configuration&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;default-monitor-configuration&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#default-monitor-configuration&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Aurora comes &lt;code&gt;1.33&lt;/code&gt; scaling for Hyprland by default&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Aurora&#39;s CLI</title>
       <link>https://example.org/docs/auroras-cli/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
