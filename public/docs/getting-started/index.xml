@@ -438,6 +438,13 @@ termflix (Cargo)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;hextra-c
         
         
         &lt;p&gt;The monitor configuration is located at &lt;code&gt;.config/hypr/monitor.lua&lt;/code&gt;. You can use some helpful GUIs to edit your monitor configuration, such as &lt;code&gt;nwg-displays&lt;/code&gt;. It&amp;rsquo;s very helpful and simple, it will overwrite your current default monitor configuration.&lt;/p&gt;
+&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:flex-col hx:rounded-lg hx:border hx:py-4 hx:px-4 hx:border-gray-200 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-green-200 hx:bg-green-100 hx:text-green-900 hx:dark:border-green-200/30 hx:dark:bg-green-900/30 hx:dark:text-green-200&#34;&gt;
+  &lt;p class=&#34;hx:flex hx:items-center hx:font-medium&#34;&gt;&lt;svg height=16px class=&#34;hx:inline-block hx:align-middle hx:mr-2&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z&#34;/&gt;&lt;/svg&gt;Tip&lt;/p&gt;
+
+  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
+    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;To know more please visit Hyprland docs&amp;rsquo;s &lt;a href=&#34;https://wiki.hypr.land/Configuring/Basics/Monitors/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;monitor&lt;/code&gt;&lt;/a&gt; page&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 &lt;h2&gt;Default monitor configuration&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;default-monitor-configuration&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#default-monitor-configuration&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Aurora comes &lt;code&gt;1.33&lt;/code&gt; scaling for Hyprland by default&lt;/p&gt;
 

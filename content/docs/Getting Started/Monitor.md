@@ -5,5 +5,10 @@ weight: 3
 
 The monitor configuration is located at `.config/hypr/monitor.lua`. You can use some helpful GUIs to edit your monitor configuration, such as `nwg-displays`. It's very helpful and simple, it will overwrite your current default monitor configuration. 
 
+> [!TIP]
+> To know more please visit Hyprland docs's [`monitor`](https://wiki.hypr.land/Configuring/Basics/Monitors/) page
+
 ## Default monitor configuration
 Aurora comes `1.33` scaling for Hyprland by default
+
+
