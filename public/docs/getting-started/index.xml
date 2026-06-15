@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Aurora – Getting Started</title>
-    <link>http://localhost:1313/docs/getting-started/</link>
+    <link>https://example.org/docs/getting-started/</link>
     <description>Recent content in Getting Started on Aurora</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	  <atom:link href="http://localhost:1313/docs/getting-started/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://example.org/docs/getting-started/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Installation</title>
-      <link>http://localhost:1313/docs/getting-started/installation/</link>
+      <link>https://example.org/docs/getting-started/installation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/docs/getting-started/installation/</guid>
+      <guid>https://example.org/docs/getting-started/installation/</guid>
       <description>
         
         
@@ -141,7 +141,8 @@ btop
 jolt (AUR)
 leenfetch (AUR)
 zen-browser-bin (AUR)
-hyprshutdown&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+hyprshutdown
+termflix (Cargo)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
   &lt;button
     class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
     title=&#34;Copy code&#34;
@@ -345,10 +346,10 @@ hyprshutdown&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-
     
     <item>
       <title>Getting Familiar</title>
-      <link>http://localhost:1313/docs/getting-started/getting-familar/</link>
+      <link>https://example.org/docs/getting-started/getting-familar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/docs/getting-started/getting-familar/</guid>
+      <guid>https://example.org/docs/getting-started/getting-familar/</guid>
       <description>
         
         
