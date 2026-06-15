@@ -16,6 +16,7 @@ Aurora provides developers unique features to customize their theme. In your the
 7. `wlogout`
 8. `All Aurora's GUI`
 9. `GTK`
+10. `Zed`
 
 > [!IMPORTANT]
 > If your theme requires any external GTK themes, packages you need to create installation script to install them. Also please write instructions to run the installation script on `README.md`
@@ -39,6 +40,8 @@ Aurora Default
          colors.css
       nvim/lua/plugins
          colorscheme.lua
+      zed/themes
+         theme.json
       btop/themes
          current.theme
       custom.css #the colorscheme file for all Aurora GUIS
@@ -64,7 +67,8 @@ You need to create a `toml` configuration file called `config.toml` in the theme
 | `[gtk]`      | `icon_theme`     | String        | Yes       | GTK icon theme name to apply.                        | `"Yaru-grey"`                                              |
 | `[vscode]`   | `publisher`      | String        | Yes       | VS Code extension publisher identifier.              | `"Aliqyan-21"`                                             |
 | `[vscode]`   | `extension_name` | String        | Yes       | VS Code extension name.                              | `"darkvoid"`                                               |
-| `[vscode]`   | `theme_name`     | String        | Yes       | Theme name within the VS Code extension.             | `"darkvoid"`                                               |
+| `[vscode]`   | `theme_name`     | String        | Yes       | Theme name within the VS Code extension.             | `"darkvoid"`|
+| `[zed]`   | `theme_name`     | String        | Yes       | The theme you want tto set by default             | `"darkvoid"` |
 
 > [!TIP]
 > You can create a `install.sh` script to install required packages (such as interpreters, GTK themes, etc)
