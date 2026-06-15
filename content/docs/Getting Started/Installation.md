@@ -101,6 +101,7 @@ jolt (AUR)
 leenfetch (AUR)
 zen-browser-bin (AUR)
 hyprshutdown
+termflix (Cargo)
 ```
 
 > [!WARNING]
