@@ -20,6 +20,7 @@ In Aurora, you can use the theme switcher to switch between themes. Aurora's the
 7. `wlogout`
 8. `All Aurora's GUI`
 9. `GTK`
+10. `Zed`
 
 > [!TIP]
 > To open theme switcher GUI, please press `SUPER + T`
