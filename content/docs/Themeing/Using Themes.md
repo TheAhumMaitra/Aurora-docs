@@ -21,6 +21,7 @@ In Aurora, you can use the theme switcher to switch between themes. Aurora's the
 8. `All Aurora's GUI`
 9. `GTK`
 10. `Zed`
+11. `Ghostty`
 
 > [!TIP]
 > To open theme switcher GUI, please press `SUPER + T`

@@ -78,3 +78,7 @@ You need to create a `toml` configuration file called `config.toml` in the theme
 
 **You can look an official Aurora's theme to understand - [`Aurora theme`](https://github.com/TheAhumMaitra/Aurora/tree/master/dotfiles/.config/themes/Dracula)**
 
+
+## Terminal emulators
+In Aurora, Ghostty is an alternative to Kitty, the default terminal emulator. At the moment, Kitty doesn't change its color scheme according to the current theme; instead, it has a fixed blurred appearance. In contrast, Ghostty is intended to be more closely integrated with Aurora's theming system, mirroring your chosen theme automatically and giving you a more vibrant, richer look.
+In Aurora, Ghostty is an alternative to Kitty, the default terminal emulator. At the moment, Kitty doesn't change its color scheme according to the current theme; instead, it has a fixed blurred appearance. In contrast, Ghostty is intended to be more closely integrated with Aurora's theming system, matching the current theme automatically and offering a more vibrant, richer look.
