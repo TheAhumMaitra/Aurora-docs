@@ -17,6 +17,7 @@ Aurora provides developers unique features to customize their theme. In your the
 8. `All Aurora's GUI`
 9. `GTK`
 10. `Zed`
+11. `Ghostty`
 
 > [!IMPORTANT]
 > If your theme requires any external GTK themes, packages you need to create installation script to install them. Also please write instructions to run the installation script on `README.md`
@@ -42,6 +43,8 @@ Aurora Default
          colorscheme.lua
       zed/themes
          theme.json
+      ghostty
+         colors.ghostty
       btop/themes
          current.theme
       custom.css #the colorscheme file for all Aurora GUIS
@@ -77,7 +80,6 @@ You need to create a `toml` configuration file called `config.toml` in the theme
 > You can import multiple external scripts on the main script
 
 **You can look an official Aurora's theme to understand - [`Aurora theme`](https://github.com/TheAhumMaitra/Aurora/tree/master/dotfiles/.config/themes/Dracula)**
-
 
 ## Terminal emulators
 In Aurora, Ghostty is a backup terminal emulator, while Kitty is the default. At the moment, Kitty doesn't change its color scheme according to the current theme; instead, it has a fixed blurred appearance. In contrast, Ghostty is intended to be more closely integrated with Aurora's theming system, mirroring your chosen theme automatically and giving you a more vibrant, richer look.
