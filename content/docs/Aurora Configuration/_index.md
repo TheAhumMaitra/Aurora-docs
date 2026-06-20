@@ -11,7 +11,8 @@ By default, Aurora does not generate a configuration file automatically. To util
 ~/.config/aurora.toml
 ```
 
-> **Note:** Aurora's configuration system is still actively developed, therefore only a limited amount of settings are now accessible.
+> [!IMPORTANT]
+> Aurora's configuration system is still actively developed, therefore only a limited amount of settings are now accessible.
 
 ## Available Sections
 
