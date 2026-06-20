@@ -8,11 +8,12 @@
 <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
-<title>Keybinds – Aurora</title>
-  <meta name="description" content="This page contains all keybinds used in Aurora. Keybinds are keyboard shortcuts that perform a specific action when pressed.
-Hyprland keybinds Keybind Action SUPER &#43; C Close current window SUPER &#43; M Exit Hyprland SUPER &#43; F Toggle fullscreen SUPER &#43; UP Move focus to upper window SUPER &#43; DOWN Move focus to lower window SUPER &#43; RIGHT Move focus to right window SUPER &#43; LEFT Move focus to left window SUPER &#43; V Toggle floating mode SUPER &#43; P Toggle pseudo mode SUPER &#43; S Open scratchpad workspace SUPER &#43; SHIFT &#43; S Move current window to scratchpad SUPER &#43; SHIFT &#43; RIGHT Resize window to the right SUPER &#43; SHIFT &#43; LEFT Resize window to the left SUPER &#43; SHIFT &#43; UP Resize window upward SUPER &#43; SHIFT &#43; DOWN Resize window downward SUPER &#43; ALT &#43; RIGHT Move current window right SUPER &#43; ALT &#43; LEFT Move current window left SUPER &#43; ALT &#43; UP Move current window up SUPER &#43; ALT &#43; DOWN Move current window down Application keybinds Keybind Action SUPER &#43; Q Open default terminal SUPER &#43; E Open default file manager SUPER &#43; ALT &#43; B Open default browser SUPER &#43; ALT &#43; V Open code editor SUPER &#43; R Open application launcher SUPER &#43; ALT &#43; E Open emoji picker SUPER &#43; SHIFT &#43; V Open clipboard manager Aurora GUIs and scripts Keybind Action SUPER &#43; H Open keybinds help app SUPER &#43; T Open theme switcher SUPER &#43; SHIFT &#43; Z Open Aurora settings SUPER &#43; ALT &#43; S Open search popup SUPER &#43; W Refresh Waybar SUPER &#43; SHIFT &#43; W Toggle Waybar SUPER &#43; SHIFT &#43; T Open theme wallpaper switcher SUPER &#43; SHIFT &#43; I Open global wallpaper switcher SUPER &#43; ALT &#43; P Open power menu SUPER &#43; ALT &#43; L Open layout switcher SUPER &#43; ALT &#43; W Change Waybar position SUPER &#43; ALT &#43; R Start screen recorder Layout switching Keybind Action SUPER &#43; B Switch to dwindle layout SUPER &#43; G Switch to grid layout SUPER &#43; K Switch to master layout SUPER &#43; X Switch to scrolling layout SUPER &#43; Z Switch to monocle layout Workspace keybinds Keybind Action SUPER &#43; [1-0] Switch workspace SUPER &#43; SHIFT &#43; [1-0] Move active window to workspace SUPER &#43; Mouse Scroll Down Switch to next workspace SUPER &#43; Mouse Scroll Up Switch to previous workspace System keybinds Keybind Action SUPER &#43; L Lock the screen XF86AudioRaiseVolume Increase volume XF86AudioLowerVolume Decrease volume XF86AudioMute Mute audio XF86AudioMicMute Mute microphone XF86MonBrightnessUp Increase brightness XF86MonBrightnessDown Decrease brightness XF86AudioNext Next media track XF86AudioPlay Play media XF86AudioPause Pause media XF86AudioPrev Previous media track Dwindle layout keybinds Keybind Action SUPER &#43; J Toggle split direction Scrolling layout keybinds Keybind Action SUPER &#43; COMMA Move column left SUPER &#43; PERIOD Move column right SUPER &#43; SHIFT &#43; COMMA Swap column left SUPER &#43; SHIFT &#43; PERIOD Swap column right SUPER &#43; ALT &#43; COMMA Decrease column size SUPER &#43; ALT &#43; PERIOD Increase column size Monocle layout keybinds Keybind Action SUPER &#43; COMMA Cycle to next window SUPER &#43; PERIOD Cycle to previous window " /><link rel="canonical" href="https://example.org/docs/keybinds/" itemprop="url" />
+<title>Aurora Configuration – Aurora</title>
+  <meta name="description" content=" Aurora may be modified via a configuration file, which gives you control over many settings and appearance-related variables.
+By default, Aurora does not generate a configuration file automatically. To utilize custom settings, create a file named aurora.toml in your ~/.config directory.
+~/.config/aurora.toml Note: Aurora’s configuration system is still actively developed, therefore only a limited amount of settings are now accessible." /><link rel="canonical" href="https://example.org/docs/aurora-configuration/" itemprop="url" />
 
-<meta property="og:title" content="Keybinds">
+<meta property="og:title" content="Aurora Configuration">
 <meta
   property="og:description"
   content="
@@ -25,17 +26,19 @@ Hyprland keybinds Keybind Action SUPER &#43; C Close current window SUPER &#43; 
   content="
     website
   ">
-<meta property="og:url" content="https://example.org/docs/keybinds/">
+<meta property="og:url" content="https://example.org/docs/aurora-configuration/">
 
 
-  <meta itemprop="name" content="Keybinds">
-  <meta itemprop="description" content="This page contains all keybinds used in Aurora. Keybinds are keyboard shortcuts that perform a specific action when pressed.
-Hyprland keybinds Keybind Action SUPER &#43; C Close current window SUPER &#43; M Exit Hyprland SUPER &#43; F Toggle fullscreen SUPER &#43; UP Move focus to upper window SUPER &#43; DOWN Move focus to lower window SUPER &#43; RIGHT Move focus to right window SUPER &#43; LEFT Move focus to left window SUPER &#43; V Toggle floating mode SUPER &#43; P Toggle pseudo mode SUPER &#43; S Open scratchpad workspace SUPER &#43; SHIFT &#43; S Move current window to scratchpad SUPER &#43; SHIFT &#43; RIGHT Resize window to the right SUPER &#43; SHIFT &#43; LEFT Resize window to the left SUPER &#43; SHIFT &#43; UP Resize window upward SUPER &#43; SHIFT &#43; DOWN Resize window downward SUPER &#43; ALT &#43; RIGHT Move current window right SUPER &#43; ALT &#43; LEFT Move current window left SUPER &#43; ALT &#43; UP Move current window up SUPER &#43; ALT &#43; DOWN Move current window down Application keybinds Keybind Action SUPER &#43; Q Open default terminal SUPER &#43; E Open default file manager SUPER &#43; ALT &#43; B Open default browser SUPER &#43; ALT &#43; V Open code editor SUPER &#43; R Open application launcher SUPER &#43; ALT &#43; E Open emoji picker SUPER &#43; SHIFT &#43; V Open clipboard manager Aurora GUIs and scripts Keybind Action SUPER &#43; H Open keybinds help app SUPER &#43; T Open theme switcher SUPER &#43; SHIFT &#43; Z Open Aurora settings SUPER &#43; ALT &#43; S Open search popup SUPER &#43; W Refresh Waybar SUPER &#43; SHIFT &#43; W Toggle Waybar SUPER &#43; SHIFT &#43; T Open theme wallpaper switcher SUPER &#43; SHIFT &#43; I Open global wallpaper switcher SUPER &#43; ALT &#43; P Open power menu SUPER &#43; ALT &#43; L Open layout switcher SUPER &#43; ALT &#43; W Change Waybar position SUPER &#43; ALT &#43; R Start screen recorder Layout switching Keybind Action SUPER &#43; B Switch to dwindle layout SUPER &#43; G Switch to grid layout SUPER &#43; K Switch to master layout SUPER &#43; X Switch to scrolling layout SUPER &#43; Z Switch to monocle layout Workspace keybinds Keybind Action SUPER &#43; [1-0] Switch workspace SUPER &#43; SHIFT &#43; [1-0] Move active window to workspace SUPER &#43; Mouse Scroll Down Switch to next workspace SUPER &#43; Mouse Scroll Up Switch to previous workspace System keybinds Keybind Action SUPER &#43; L Lock the screen XF86AudioRaiseVolume Increase volume XF86AudioLowerVolume Decrease volume XF86AudioMute Mute audio XF86AudioMicMute Mute microphone XF86MonBrightnessUp Increase brightness XF86MonBrightnessDown Decrease brightness XF86AudioNext Next media track XF86AudioPlay Play media XF86AudioPause Pause media XF86AudioPrev Previous media track Dwindle layout keybinds Keybind Action SUPER &#43; J Toggle split direction Scrolling layout keybinds Keybind Action SUPER &#43; COMMA Move column left SUPER &#43; PERIOD Move column right SUPER &#43; SHIFT &#43; COMMA Swap column left SUPER &#43; SHIFT &#43; PERIOD Swap column right SUPER &#43; ALT &#43; COMMA Decrease column size SUPER &#43; ALT &#43; PERIOD Increase column size Monocle layout keybinds Keybind Action SUPER &#43; COMMA Cycle to next window SUPER &#43; PERIOD Cycle to previous window">
-  <meta itemprop="wordCount" content="520">
+  <meta itemprop="name" content="Aurora Configuration">
+  <meta itemprop="description" content="Aurora may be modified via a configuration file, which gives you control over many settings and appearance-related variables.
+By default, Aurora does not generate a configuration file automatically. To utilize custom settings, create a file named aurora.toml in your ~/.config directory.
+~/.config/aurora.toml Note: Aurora’s configuration system is still actively developed, therefore only a limited amount of settings are now accessible.">
+  <meta itemprop="wordCount" content="171">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Keybinds">
-  <meta name="twitter:description" content="This page contains all keybinds used in Aurora. Keybinds are keyboard shortcuts that perform a specific action when pressed.
-Hyprland keybinds Keybind Action SUPER &#43; C Close current window SUPER &#43; M Exit Hyprland SUPER &#43; F Toggle fullscreen SUPER &#43; UP Move focus to upper window SUPER &#43; DOWN Move focus to lower window SUPER &#43; RIGHT Move focus to right window SUPER &#43; LEFT Move focus to left window SUPER &#43; V Toggle floating mode SUPER &#43; P Toggle pseudo mode SUPER &#43; S Open scratchpad workspace SUPER &#43; SHIFT &#43; S Move current window to scratchpad SUPER &#43; SHIFT &#43; RIGHT Resize window to the right SUPER &#43; SHIFT &#43; LEFT Resize window to the left SUPER &#43; SHIFT &#43; UP Resize window upward SUPER &#43; SHIFT &#43; DOWN Resize window downward SUPER &#43; ALT &#43; RIGHT Move current window right SUPER &#43; ALT &#43; LEFT Move current window left SUPER &#43; ALT &#43; UP Move current window up SUPER &#43; ALT &#43; DOWN Move current window down Application keybinds Keybind Action SUPER &#43; Q Open default terminal SUPER &#43; E Open default file manager SUPER &#43; ALT &#43; B Open default browser SUPER &#43; ALT &#43; V Open code editor SUPER &#43; R Open application launcher SUPER &#43; ALT &#43; E Open emoji picker SUPER &#43; SHIFT &#43; V Open clipboard manager Aurora GUIs and scripts Keybind Action SUPER &#43; H Open keybinds help app SUPER &#43; T Open theme switcher SUPER &#43; SHIFT &#43; Z Open Aurora settings SUPER &#43; ALT &#43; S Open search popup SUPER &#43; W Refresh Waybar SUPER &#43; SHIFT &#43; W Toggle Waybar SUPER &#43; SHIFT &#43; T Open theme wallpaper switcher SUPER &#43; SHIFT &#43; I Open global wallpaper switcher SUPER &#43; ALT &#43; P Open power menu SUPER &#43; ALT &#43; L Open layout switcher SUPER &#43; ALT &#43; W Change Waybar position SUPER &#43; ALT &#43; R Start screen recorder Layout switching Keybind Action SUPER &#43; B Switch to dwindle layout SUPER &#43; G Switch to grid layout SUPER &#43; K Switch to master layout SUPER &#43; X Switch to scrolling layout SUPER &#43; Z Switch to monocle layout Workspace keybinds Keybind Action SUPER &#43; [1-0] Switch workspace SUPER &#43; SHIFT &#43; [1-0] Move active window to workspace SUPER &#43; Mouse Scroll Down Switch to next workspace SUPER &#43; Mouse Scroll Up Switch to previous workspace System keybinds Keybind Action SUPER &#43; L Lock the screen XF86AudioRaiseVolume Increase volume XF86AudioLowerVolume Decrease volume XF86AudioMute Mute audio XF86AudioMicMute Mute microphone XF86MonBrightnessUp Increase brightness XF86MonBrightnessDown Decrease brightness XF86AudioNext Next media track XF86AudioPlay Play media XF86AudioPause Pause media XF86AudioPrev Previous media track Dwindle layout keybinds Keybind Action SUPER &#43; J Toggle split direction Scrolling layout keybinds Keybind Action SUPER &#43; COMMA Move column left SUPER &#43; PERIOD Move column right SUPER &#43; SHIFT &#43; COMMA Swap column left SUPER &#43; SHIFT &#43; PERIOD Swap column right SUPER &#43; ALT &#43; COMMA Decrease column size SUPER &#43; ALT &#43; PERIOD Increase column size Monocle layout keybinds Keybind Action SUPER &#43; COMMA Cycle to next window SUPER &#43; PERIOD Cycle to previous window">
+  <meta name="twitter:title" content="Aurora Configuration">
+  <meta name="twitter:description" content="Aurora may be modified via a configuration file, which gives you control over many settings and appearance-related variables.
+By default, Aurora does not generate a configuration file automatically. To utilize custom settings, create a file named aurora.toml in your ~/.config directory.
+~/.config/aurora.toml Note: Aurora’s configuration system is still actively developed, therefore only a limited amount of settings are now accessible.">
 
     <link rel="preload" href="/css/compiled/main.min.1a431501cdeb52323c920e7761f7d9e327b2bee53160196c4bd1d34a3fd9fbc9.css" as="style" integrity="sha256-GkMVAc3rUjI8kg53YffZ4yeyvuUxYBlsS9HTSj/Z&#43;8k=" />
     <link href="/css/compiled/main.min.1a431501cdeb52323c920e7761f7d9e327b2bee53160196c4bd1d34a3fd9fbc9.css" rel="stylesheet" integrity="sha256-GkMVAc3rUjI8kg53YffZ4yeyvuUxYBlsS9HTSj/Z&#43;8k=" />
@@ -194,72 +197,15 @@ Hyprland keybinds Keybind Action SUPER &#43; C Close current window SUPER &#43; 
               
             </li></ul>
       </div>
-            </li><li class="hx:flex hx:flex-col open"><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="true">
+            </li><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
     <a
-      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:hextra-focus-visible-inset hextra-sidebar-active-item hx:bg-primary-100 hx:font-semibold hx:text-primary-800 hx:contrast-more:border hx:contrast-more:border-primary-500 hx:dark:bg-primary-400/10 hx:dark:text-primary-600 hx:contrast-more:dark:border-primary-500"
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:hextra-focus-visible-inset hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
       href="/docs/keybinds/"
       
     >
       <span class="hx:min-w-0 [word-break:break-word]">Keybinds</span>
     </a>
   </div>
-  
-    <ul class='hx:flex hx:flex-col hx:gap-1 hx:relative hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:dark:before:bg-neutral-800 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:pr-3 hx:rtl:before:right-0 hx:ltr:ml-3 hx:rtl:mr-3'><li>
-              <a
-                href="#hyprland-keybinds"
-                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
-              >Hyprland keybinds</a>
-            </li>
-          <li>
-              <a
-                href="#application-keybinds"
-                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
-              >Application keybinds</a>
-            </li>
-          <li>
-              <a
-                href="#aurora-guis-and-scripts"
-                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
-              >Aurora GUIs and scripts</a>
-            </li>
-          <li>
-              <a
-                href="#layout-switching"
-                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
-              >Layout switching</a>
-            </li>
-          <li>
-              <a
-                href="#workspace-keybinds"
-                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
-              >Workspace keybinds</a>
-            </li>
-          <li>
-              <a
-                href="#system-keybinds"
-                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
-              >System keybinds</a>
-            </li>
-          <li>
-              <a
-                href="#dwindle-layout-keybinds"
-                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
-              >Dwindle layout keybinds</a>
-            </li>
-          <li>
-              <a
-                href="#scrolling-layout-keybinds"
-                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
-              >Scrolling layout keybinds</a>
-            </li>
-          <li>
-              <a
-                href="#monocle-layout-keybinds"
-                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
-              >Monocle layout keybinds</a>
-            </li>
-          </ul>
-  
               
             </li><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
     <a
@@ -334,15 +280,30 @@ Hyprland keybinds Keybind Action SUPER &#43; C Close current window SUPER &#43; 
     </a>
   </div>
               
-            </li><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+            </li><li class="hx:flex hx:flex-col open"><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="true">
     <a
-      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:hextra-focus-visible-inset hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:hextra-focus-visible-inset hextra-sidebar-active-item hx:bg-primary-100 hx:font-semibold hx:text-primary-800 hx:contrast-more:border hx:contrast-more:border-primary-500 hx:dark:bg-primary-400/10 hx:dark:text-primary-600 hx:contrast-more:dark:border-primary-500"
       href="/docs/aurora-configuration/"
       
     >
       <span class="hx:min-w-0 [word-break:break-word]">Aurora Configuration</span>
     </a>
   </div>
+  
+    <ul class='hx:flex hx:flex-col hx:gap-1 hx:relative hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:dark:before:bg-neutral-800 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:pr-3 hx:rtl:before:right-0 hx:ltr:ml-3 hx:rtl:mr-3'><li>
+              <a
+                href="#available-sections"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >Available Sections</a>
+            </li>
+          <li>
+              <a
+                href="#example-of-auroras-configuration"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >Example of Aurora’s Configuration</a>
+            </li>
+          </ul>
+  
               
             </li></ul>
       </div></li>
@@ -392,9 +353,9 @@ Hyprland keybinds Keybind Action SUPER &#43; C Close current window SUPER &#43; 
               
             </li></ul>
       </div></li>
-            <li class="open"><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="true">
+            <li class=""><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
     <a
-      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:hextra-focus-visible-inset hextra-sidebar-active-item hx:bg-primary-100 hx:font-semibold hx:text-primary-800 hx:contrast-more:border hx:contrast-more:border-primary-500 hx:dark:bg-primary-400/10 hx:dark:text-primary-600 hx:contrast-more:dark:border-primary-500"
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:hextra-focus-visible-inset hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
       href="/docs/keybinds/"
       
     >
@@ -469,9 +430,9 @@ Hyprland keybinds Keybind Action SUPER &#43; C Close current window SUPER &#43; 
       <span class="hx:min-w-0 [word-break:break-word]">FAQ</span>
     </a>
   </div></li>
-            <li class=""><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+            <li class="open"><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="true">
     <a
-      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:hextra-focus-visible-inset hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:hextra-focus-visible-inset hextra-sidebar-active-item hx:bg-primary-100 hx:font-semibold hx:text-primary-800 hx:contrast-more:border hx:contrast-more:border-primary-500 hx:dark:bg-primary-400/10 hx:dark:text-primary-600 hx:contrast-more:dark:border-primary-500"
       href="/docs/aurora-configuration/"
       
     >
@@ -551,39 +512,27 @@ Hyprland keybinds Keybind Action SUPER &#43; C Close current window SUPER &#43; 
 <nav class="hextra-toc hx:order-last hx:hidden hx:w-64 hx:shrink-0 hx:xl:block hx:print:hidden hx:px-4" aria-label="Table of contents">
     <div class="hextra-scrollbar hx:sticky hx:top-16 hx:overflow-y-auto hx:pr-4 hx:pt-6 hx:text-sm [hyphens:auto] hx:max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] hx:ltr:-mr-4 hx:rtl:-ml-4"><p class="hx:mb-4 hx:font-semibold hx:tracking-tight">On this page</p><ul>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#hyprland-keybinds">Hyprland keybinds
+        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#available-sections">Available Sections
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#application-keybinds">Application keybinds
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#settings">[settings]
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#aurora-guis-and-scripts">Aurora GUIs and scripts
+        <a class="hx:ltr:pl-8 hx:rtl:pr-8 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#example">Example
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#layout-switching">Layout switching
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#ghostty">[ghostty]
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#workspace-keybinds">Workspace keybinds
+        <a class="hx:ltr:pl-8 hx:rtl:pr-8 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#example-1">Example
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#system-keybinds">System keybinds
-        </a>
-      </li>
-      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#dwindle-layout-keybinds">Dwindle layout keybinds
-        </a>
-      </li>
-      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#scrolling-layout-keybinds">Scrolling layout keybinds
-        </a>
-      </li>
-      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#monocle-layout-keybinds">Monocle layout keybinds
+        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#example-of-auroras-configuration">Example of Aurora’s Configuration
         </a>
       </li></ul>
       <div class="hx:mt-8 hx:border-t hx:bg-white hx:pt-8 hx:shadow-[0_-12px_16px_white] hx:dark:bg-dark hx:dark:shadow-[0_-12px_16px_#111] hx:sticky hx:bottom-0 hx:flex hx:flex-col hx:items-start hx:gap-2 hx:pb-8 hx:border-gray-200 hx:dark:border-neutral-800 hx:contrast-more:border-t hx:contrast-more:border-neutral-400 hx:contrast-more:shadow-none hx:contrast-more:dark:border-neutral-400">
@@ -603,392 +552,139 @@ Hyprland keybinds Keybind Action SUPER &#43; C Close current window SUPER &#43; 
         <div class="hx:mt-1.5 hx:flex hx:items-center hx:gap-1 hx:overflow-hidden hx:text-sm hx:text-gray-500 hx:dark:text-gray-400 hx:contrast-more:text-current">
         <div class="hx:whitespace-nowrap hx:transition-colors hx:min-w-[24px] hx:overflow-hidden hx:text-ellipsis hx:hover:text-gray-900 hx:dark:hover:text-gray-100">
           <a href="/docs/" class="hx:inline-block hx:rounded-sm hx:hextra-focus-visible-inset">Docs</a>
-        </div><svg class="hx:w-3.5 hx:shrink-0 hx:rtl:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg><div class="hx:whitespace-nowrap hx:transition-colors hx:font-medium hx:text-gray-700 hx:contrast-more:font-bold hx:contrast-more:text-current hx:dark:text-gray-100 hx:contrast-more:dark:text-current">Keybinds</div>
+        </div><svg class="hx:w-3.5 hx:shrink-0 hx:rtl:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg><div class="hx:whitespace-nowrap hx:transition-colors hx:font-medium hx:text-gray-700 hx:contrast-more:font-bold hx:contrast-more:text-current hx:dark:text-gray-100 hx:contrast-more:dark:text-current">Aurora Configuration</div>
   </div>
 
         <div class="content">
           
           <div class="hx:flex hx:flex-col hx:sm:flex-row hx:items-start hx:sm:items-center hx:sm:justify-between hx:gap-4 hx:mb-4">
-            <h1 class="hx:mb-0">Keybinds</h1>
+            <h1 class="hx:mb-0">Aurora Configuration</h1>
             
           </div>
           
-          <p>This page contains all keybinds used in Aurora. Keybinds are keyboard shortcuts that perform a specific action when pressed.</p>
-<h2>Hyprland keybinds<span class="hx:absolute hx:-mt-20" id="hyprland-keybinds"></span>
-    <a href="#hyprland-keybinds" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><table>
+          <hr>
+<p>Aurora may be modified via a configuration file, which gives you control over many settings and appearance-related variables.</p>
+<p>By default, Aurora does not generate a configuration file automatically. To utilize custom settings, create a file named <code>aurora.toml</code> in your <code>~/.config</code> directory.</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>~/.config/aurora.toml</span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+    aria-label="Copy code"
+    data-copied-label="Copied!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<blockquote>
+  <p><strong>Note:</strong> Aurora&rsquo;s configuration system is still actively developed, therefore only a limited amount of settings are now accessible.</p>
+
+</blockquote>
+<h2>Available Sections<span class="hx:absolute hx:-mt-20" id="available-sections"></span>
+    <a href="#available-sections" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><h3><code>[settings]</code><span class="hx:absolute hx:-mt-20" id="settings"></span>
+    <a href="#settings" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>General Aurora settings.</p>
+<table>
   <thead>
       <tr>
-          <th style="text-align: left">Keybind</th>
-          <th style="text-align: left">Action</th>
+          <th>Key</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Example</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><code>SUPER + C</code></td>
-          <td style="text-align: left">Close current window</td>
+          <td><code>screensaver</code></td>
+          <td><code>boolean</code></td>
+          <td>Enables or disables the Aurora screensaver.</td>
+          <td><code>screensaver = false</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>SUPER + M</code></td>
-          <td style="text-align: left">Exit Hyprland</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + F</code></td>
-          <td style="text-align: left">Toggle fullscreen</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + UP</code></td>
-          <td style="text-align: left">Move focus to upper window</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + DOWN</code></td>
-          <td style="text-align: left">Move focus to lower window</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + RIGHT</code></td>
-          <td style="text-align: left">Move focus to right window</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + LEFT</code></td>
-          <td style="text-align: left">Move focus to left window</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + V</code></td>
-          <td style="text-align: left">Toggle floating mode</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + P</code></td>
-          <td style="text-align: left">Toggle pseudo mode</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + S</code></td>
-          <td style="text-align: left">Open scratchpad workspace</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + SHIFT + S</code></td>
-          <td style="text-align: left">Move current window to scratchpad</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + SHIFT + RIGHT</code></td>
-          <td style="text-align: left">Resize window to the right</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + SHIFT + LEFT</code></td>
-          <td style="text-align: left">Resize window to the left</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + SHIFT + UP</code></td>
-          <td style="text-align: left">Resize window upward</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + SHIFT + DOWN</code></td>
-          <td style="text-align: left">Resize window downward</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + ALT + RIGHT</code></td>
-          <td style="text-align: left">Move current window right</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + ALT + LEFT</code></td>
-          <td style="text-align: left">Move current window left</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + ALT + UP</code></td>
-          <td style="text-align: left">Move current window up</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + ALT + DOWN</code></td>
-          <td style="text-align: left">Move current window down</td>
+          <td><code>welcome_app</code></td>
+          <td><code>boolean</code></td>
+          <td>Enables or disables the Aurora Welcome App, which launches when Hyprland starts.</td>
+          <td><code>welcome_app = true</code></td>
       </tr>
   </tbody>
 </table>
+<h4>Example<span class="hx:absolute hx:-mt-20" id="example"></span>
+    <a href="#example" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">settings</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">screensaver</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">welcome_app</span> = <span style="color:#66d9ef">true</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+    aria-label="Copy code"
+    data-copied-label="Copied!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
 <hr>
-<h2>Application keybinds<span class="hx:absolute hx:-mt-20" id="application-keybinds"></span>
-    <a href="#application-keybinds" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><table>
+<h3><code>[ghostty]</code><span class="hx:absolute hx:-mt-20" id="ghostty"></span>
+    <a href="#ghostty" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Settings related to Ghostty&rsquo;s appearance and behavior.</p>
+<table>
   <thead>
       <tr>
-          <th style="text-align: left">Keybind</th>
-          <th style="text-align: left">Action</th>
+          <th>Key</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Example</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><code>SUPER + Q</code></td>
-          <td style="text-align: left">Open default terminal</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + E</code></td>
-          <td style="text-align: left">Open default file manager</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + ALT + B</code></td>
-          <td style="text-align: left">Open default browser</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + ALT + V</code></td>
-          <td style="text-align: left">Open code editor</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + R</code></td>
-          <td style="text-align: left">Open application launcher</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + ALT + E</code></td>
-          <td style="text-align: left">Open emoji picker</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + SHIFT + V</code></td>
-          <td style="text-align: left">Open clipboard manager</td>
+          <td><code>blur</code></td>
+          <td><code>boolean</code></td>
+          <td>Enables Ghostty background blur. When enabled, Aurora disables the default theme-based color palette and uses the blur configuration instead. When disabled, Ghostty continues using Aurora&rsquo;s theme-based color palette.</td>
+          <td><code>blur = true</code></td>
       </tr>
   </tbody>
 </table>
+<h4>Example<span class="hx:absolute hx:-mt-20" id="example-1"></span>
+    <a href="#example-1" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">ghostty</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">blur</span> = <span style="color:#66d9ef">true</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+    aria-label="Copy code"
+    data-copied-label="Copied!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
 <hr>
-<h2>Aurora GUIs and scripts<span class="hx:absolute hx:-mt-20" id="aurora-guis-and-scripts"></span>
-    <a href="#aurora-guis-and-scripts" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><table>
-  <thead>
-      <tr>
-          <th style="text-align: left">Keybind</th>
-          <th style="text-align: left">Action</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left"><code>SUPER + H</code></td>
-          <td style="text-align: left">Open keybinds help app</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + T</code></td>
-          <td style="text-align: left">Open theme switcher</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + SHIFT + Z</code></td>
-          <td style="text-align: left">Open Aurora settings</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + ALT + S</code></td>
-          <td style="text-align: left">Open search popup</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + W</code></td>
-          <td style="text-align: left">Refresh Waybar</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + SHIFT + W</code></td>
-          <td style="text-align: left">Toggle Waybar</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + SHIFT + T</code></td>
-          <td style="text-align: left">Open theme wallpaper switcher</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + SHIFT + I</code></td>
-          <td style="text-align: left">Open global wallpaper switcher</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + ALT + P</code></td>
-          <td style="text-align: left">Open power menu</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + ALT + L</code></td>
-          <td style="text-align: left">Open layout switcher</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + ALT + W</code></td>
-          <td style="text-align: left">Change Waybar position</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + ALT + R</code></td>
-          <td style="text-align: left">Start screen recorder</td>
-      </tr>
-  </tbody>
-</table>
-<hr>
-<h2>Layout switching<span class="hx:absolute hx:-mt-20" id="layout-switching"></span>
-    <a href="#layout-switching" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><table>
-  <thead>
-      <tr>
-          <th style="text-align: left">Keybind</th>
-          <th style="text-align: left">Action</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left"><code>SUPER + B</code></td>
-          <td style="text-align: left">Switch to dwindle layout</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + G</code></td>
-          <td style="text-align: left">Switch to grid layout</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + K</code></td>
-          <td style="text-align: left">Switch to master layout</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + X</code></td>
-          <td style="text-align: left">Switch to scrolling layout</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + Z</code></td>
-          <td style="text-align: left">Switch to monocle layout</td>
-      </tr>
-  </tbody>
-</table>
-<hr>
-<h2>Workspace keybinds<span class="hx:absolute hx:-mt-20" id="workspace-keybinds"></span>
-    <a href="#workspace-keybinds" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><table>
-  <thead>
-      <tr>
-          <th style="text-align: left">Keybind</th>
-          <th style="text-align: left">Action</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left"><code>SUPER + [1-0]</code></td>
-          <td style="text-align: left">Switch workspace</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + SHIFT + [1-0]</code></td>
-          <td style="text-align: left">Move active window to workspace</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + Mouse Scroll Down</code></td>
-          <td style="text-align: left">Switch to next workspace</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + Mouse Scroll Up</code></td>
-          <td style="text-align: left">Switch to previous workspace</td>
-      </tr>
-  </tbody>
-</table>
-<hr>
-<h2>System keybinds<span class="hx:absolute hx:-mt-20" id="system-keybinds"></span>
-    <a href="#system-keybinds" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><table>
-  <thead>
-      <tr>
-          <th style="text-align: left">Keybind</th>
-          <th style="text-align: left">Action</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left"><code>SUPER + L</code></td>
-          <td style="text-align: left">Lock the screen</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>XF86AudioRaiseVolume</code></td>
-          <td style="text-align: left">Increase volume</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>XF86AudioLowerVolume</code></td>
-          <td style="text-align: left">Decrease volume</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>XF86AudioMute</code></td>
-          <td style="text-align: left">Mute audio</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>XF86AudioMicMute</code></td>
-          <td style="text-align: left">Mute microphone</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>XF86MonBrightnessUp</code></td>
-          <td style="text-align: left">Increase brightness</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>XF86MonBrightnessDown</code></td>
-          <td style="text-align: left">Decrease brightness</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>XF86AudioNext</code></td>
-          <td style="text-align: left">Next media track</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>XF86AudioPlay</code></td>
-          <td style="text-align: left">Play media</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>XF86AudioPause</code></td>
-          <td style="text-align: left">Pause media</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>XF86AudioPrev</code></td>
-          <td style="text-align: left">Previous media track</td>
-      </tr>
-  </tbody>
-</table>
-<hr>
-<h2>Dwindle layout keybinds<span class="hx:absolute hx:-mt-20" id="dwindle-layout-keybinds"></span>
-    <a href="#dwindle-layout-keybinds" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><table>
-  <thead>
-      <tr>
-          <th style="text-align: left">Keybind</th>
-          <th style="text-align: left">Action</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left"><code>SUPER + J</code></td>
-          <td style="text-align: left">Toggle split direction</td>
-      </tr>
-  </tbody>
-</table>
-<hr>
-<h2>Scrolling layout keybinds<span class="hx:absolute hx:-mt-20" id="scrolling-layout-keybinds"></span>
-    <a href="#scrolling-layout-keybinds" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><table>
-  <thead>
-      <tr>
-          <th style="text-align: left">Keybind</th>
-          <th style="text-align: left">Action</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left"><code>SUPER + COMMA</code></td>
-          <td style="text-align: left">Move column left</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + PERIOD</code></td>
-          <td style="text-align: left">Move column right</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + SHIFT + COMMA</code></td>
-          <td style="text-align: left">Swap column left</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + SHIFT + PERIOD</code></td>
-          <td style="text-align: left">Swap column right</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + ALT + COMMA</code></td>
-          <td style="text-align: left">Decrease column size</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + ALT + PERIOD</code></td>
-          <td style="text-align: left">Increase column size</td>
-      </tr>
-  </tbody>
-</table>
-<hr>
-<h2>Monocle layout keybinds<span class="hx:absolute hx:-mt-20" id="monocle-layout-keybinds"></span>
-    <a href="#monocle-layout-keybinds" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><table>
-  <thead>
-      <tr>
-          <th style="text-align: left">Keybind</th>
-          <th style="text-align: left">Action</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left"><code>SUPER + COMMA</code></td>
-          <td style="text-align: left">Cycle to next window</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>SUPER + PERIOD</code></td>
-          <td style="text-align: left">Cycle to previous window</td>
-      </tr>
-  </tbody>
-</table>
+<h2>Example of Aurora&rsquo;s Configuration<span class="hx:absolute hx:-mt-20" id="example-of-auroras-configuration"></span>
+    <a href="#example-of-auroras-configuration" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">ghostty</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">blur</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">settings</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">screensaver</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">welcome_app</span> = <span style="color:#66d9ef">true</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+    aria-label="Copy code"
+    data-copied-label="Copied!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
 
         </div>
         <div class="hx:mt-16"></div>
