@@ -62,3 +62,10 @@ blur = true
 screensaver = false
 welcome_app = true
 ```
+
+## Reloading Aurora
+After saving the configuration after every edit, you may run this command to reload and parse Aurora's configuration :-
+
+```text
+aurora reload
+```
