@@ -10,8 +10,9 @@
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>Screensaver – Aurora</title>
   <meta name="description" content="Aurora provides very cool screensaver support. It uses a TUI called termflix to provide 42 live effects
-Preview Your browser does not support the video tag. How to disable To disable Aurora’s screensaver, please follow these steps :-
-Edit hypridle configuration Use your preferred code editor to edit hypridle configuration which is located at .config/hypr/hypridle.conf" /><link rel="canonical" href="https://example.org/docs/screensaver/" itemprop="url" />
+Preview Your browser does not support the video tag. How to disable There are some ways to disable screensaver
+1. Using Aurora’s cli Run the following command to disable screensaver :-
+aurora settings screensaver off 2. By editing Aurora’s configuration. You can also disable the screensaver by modifying the Aurora configuration file manually." /><link rel="canonical" href="https://example.org/docs/screensaver/" itemprop="url" />
 
 <meta property="og:title" content="Screensaver">
 <meta
@@ -31,14 +32,16 @@ Edit hypridle configuration Use your preferred code editor to edit hypridle conf
 
   <meta itemprop="name" content="Screensaver">
   <meta itemprop="description" content="Aurora provides very cool screensaver support. It uses a TUI called termflix to provide 42 live effects
-Preview Your browser does not support the video tag. How to disable To disable Aurora’s screensaver, please follow these steps :-
-Edit hypridle configuration Use your preferred code editor to edit hypridle configuration which is located at .config/hypr/hypridle.conf">
-  <meta itemprop="wordCount" content="72">
+Preview Your browser does not support the video tag. How to disable There are some ways to disable screensaver
+1. Using Aurora’s cli Run the following command to disable screensaver :-
+aurora settings screensaver off 2. By editing Aurora’s configuration. You can also disable the screensaver by modifying the Aurora configuration file manually.">
+  <meta itemprop="wordCount" content="127">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Screensaver">
   <meta name="twitter:description" content="Aurora provides very cool screensaver support. It uses a TUI called termflix to provide 42 live effects
-Preview Your browser does not support the video tag. How to disable To disable Aurora’s screensaver, please follow these steps :-
-Edit hypridle configuration Use your preferred code editor to edit hypridle configuration which is located at .config/hypr/hypridle.conf">
+Preview Your browser does not support the video tag. How to disable There are some ways to disable screensaver
+1. Using Aurora’s cli Run the following command to disable screensaver :-
+aurora settings screensaver off 2. By editing Aurora’s configuration. You can also disable the screensaver by modifying the Aurora configuration file manually.">
 
     <link rel="preload" href="/css/compiled/main.min.1a431501cdeb52323c920e7761f7d9e327b2bee53160196c4bd1d34a3fd9fbc9.css" as="style" integrity="sha256-GkMVAc3rUjI8kg53YffZ4yeyvuUxYBlsS9HTSj/Z&#43;8k=" />
     <link href="/css/compiled/main.min.1a431501cdeb52323c920e7761f7d9e327b2bee53160196c4bd1d34a3fd9fbc9.css" rel="stylesheet" integrity="sha256-GkMVAc3rUjI8kg53YffZ4yeyvuUxYBlsS9HTSj/Z&#43;8k=" />
@@ -520,7 +523,15 @@ Edit hypridle configuration Use your preferred code editor to edit hypridle conf
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#edit-hypridle-configuration">Edit hypridle configuration
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#1-using-auroras-cli">1. Using Aurora’s cli
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#2-by-editing-auroras-configuration">2. By editing Aurora’s configuration.
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#3-manually-edit-hypridle-configuration">3. Manually Edit hypridle configuration
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
@@ -577,17 +588,65 @@ Edit hypridle configuration Use your preferred code editor to edit hypridle conf
 
 </figure>
 <h2>How to disable<span class="hx:absolute hx:-mt-20" id="how-to-disable"></span>
-    <a href="#how-to-disable" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>To disable Aurora&rsquo;s screensaver, please follow these steps :-</p>
-<h3>Edit <code>hypridle</code> configuration<span class="hx:absolute hx:-mt-20" id="edit-hypridle-configuration"></span>
-    <a href="#edit-hypridle-configuration" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Use your preferred code editor to edit <code>hypridle</code> configuration which is located at <code>.config/hypr/hypridle.conf</code></p>
+    <a href="#how-to-disable" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>There are some ways to disable <strong>screensaver</strong></p>
+<h3>1. Using Aurora&rsquo;s cli<span class="hx:absolute hx:-mt-20" id="1-using-auroras-cli"></span>
+    <a href="#1-using-auroras-cli" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Run the following command to disable screensaver :-</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>aurora settings screensaver off</span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+    aria-label="Copy code"
+    data-copied-label="Copied!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3>2. By editing Aurora&rsquo;s configuration.<span class="hx:absolute hx:-mt-20" id="2-by-editing-auroras-configuration"></span>
+    <a href="#2-by-editing-auroras-configuration" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>You can also disable the screensaver by modifying the Aurora configuration file manually.</p>
+<p>To disable the screensaver:</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">settings</span>] <span style="color:#a6e22e">screensaver</span> = <span style="color:#66d9ef">false</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+    aria-label="Copy code"
+    data-copied-label="Copied!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<p>After saving the file, you need to reload by running :-</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>aurora reload</span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+    aria-label="Copy code"
+    data-copied-label="Copied!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h3>3. Manually Edit <code>hypridle</code> configuration<span class="hx:absolute hx:-mt-20" id="3-manually-edit-hypridle-configuration"></span>
+    <a href="#3-manually-edit-hypridle-configuration" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Use your preferred code editor to edit <code>hypridle</code> configuration which is located at <code>.config/hypr/hypridle.conf</code></p>
 <h4>Comment this following part<span class="hx:absolute hx:-mt-20" id="comment-this-following-part"></span>
     <a href="#comment-this-following-part" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
 
-<div><pre><code># Start Aurora screensaver
-listener {
-    timeout = 150 
-    on-timeout = aurora-launch-screensaver
-}</code></pre></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+<div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span># Start Aurora screensaver
+</span></span><span style="display:flex;"><span>listener {
+</span></span><span style="display:flex;"><span>    timeout = 150 
+</span></span><span style="display:flex;"><span>    on-timeout = aurora-launch-screensaver
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
   <button
     class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
     title="Copy code"
