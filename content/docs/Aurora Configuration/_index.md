@@ -1,7 +1,7 @@
 ---
 title: "Aurora Configuration"
 weight: 7
----------
+----
 
 Aurora may be modified via a configuration file, which gives you control over many settings and appearance-related variables.
 
