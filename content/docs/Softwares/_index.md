@@ -39,3 +39,8 @@ Helps to show crucial information about system in a very cool statistically grap
 #### `jolt`
 Helps to show various information about battery!
 ![jolt](images/jolt.png)
+
+### Terminal effects/ screensavers
+#### `termflix`
+Helps Aurora to present 42 live effects for screensaver!
+![termflix](images/termflix.png)
